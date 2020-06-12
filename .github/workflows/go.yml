@@ -1,4 +1,4 @@
-name: Go-单元测试
+name: 单元测试
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        go: [ "1.13", "1.12" ]
+        go: [ "1.13","1.14","1.12", ]
     steps:
 
     - name: 环境安装：Set up Go ${{ matrix.go }}
