@@ -25,12 +25,12 @@ $ go get -u https://github.com/newgolibs/goarray
 1.测试入口文件
 
 test\类、结构体名称\要测试的函数test.go<br>
-run 函数接受参数为：要处理的内容，以及测试函数可能会需要的函数参数（因为面向对象写法决定：大部分函数是没有参数的）
+`run` 函数接受参数为：要处理的内容，以及测试函数可能会需要的函数参数（面向对象写法决定：大部分函数是不接受参数）
 
 2.测试数据源表
 
 test\类、结构体名称\要测试的函数test\要测试的数据源Provider.go<br>
-DataProvider函数提供一个测试表，为2维数组 ：[]interface{}{...[]interface{}}<br>
+`DataProvider` 函数提供一个测试表，为2维数组 ：[]interface{}{...[]interface{}}<br>
 
 3.数据源数组的结构有4个索引
 
