@@ -1,10 +1,9 @@
-类库[goarray]
---------
+<h1 align="center"> 类库[goarray] </h1>
+<p align="center"> 数组切片基本操作方法集合。主要是配合数据库ORM常见的需求编写的。</p>
+
 ![](https://github.com/newgolibs/goarray/workflows/单元测试/badge.svg)
 
-> 数组切片基本操作方法集合。主要是配合数据库ORM常见的需求编写的。;
-
-## 代码编写原则:
+## 代码编写原则
 - 遵循代码轮廓由后台配置生成,保证不会掺杂人为造成的错误
 - 每一个特性都有对应的测试代码
 - 向对象编程.每个类只实现一个invoke函数
@@ -13,7 +12,7 @@
 ## 安装、引入代码 Installation
 
 ```
-$ go get -u git@github.com:newgolibs/goarray.git
+$ go get -u https://github.com/newgolibs/goarray
 ```
 
 
@@ -39,3 +38,6 @@ DataProvider函数提供一个测试表，为2维数组 ：[]interface{}{...[]in
 * 期望得到的结果
 * 函数的参数
 * 测试案例本身的说明
+
+## License
+MIT
