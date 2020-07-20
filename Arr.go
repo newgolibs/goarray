@@ -56,3 +56,17 @@ func (this *Arr) GetbyIndex(index int) interface{} {
 	}
 	return reflectv.Index(index).Interface()
 }
+
+func (this *Arr) Contain(findvar interface{}) bool {
+	reflectv := reflect.ValueOf(this.Value)
+	for i := 0; i < reflectv.Len(); i++ {
+		// 第一步，判断类型一致
+		if reflectv.Index(i).Kind() == reflect.ValueOf(findvar).Kind() {
+			// 第二步：判断值一致
+			if reflectv.Index(i).Interface() == findvar {
+				return true
+			}
+		}
+	}
+	return false
+}
